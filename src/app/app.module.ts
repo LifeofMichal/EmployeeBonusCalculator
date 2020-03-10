@@ -32,8 +32,8 @@ import { BonusCalculatorComponent } from './bonus-calculator/bonus-calculator.co
         FormsModule,
         ReactiveFormsModule,
         RouterModule.forRoot([
-            { path: '', component: HomeComponent, pathMatch: 'full' },
-            { path: 'employees', component: EmployeesComponent },
+            { path: 'home', component: HomeComponent },
+            { path: '', component: EmployeesComponent, pathMatch: 'full' },
             { path: 'employee/create', component: EmployeeCreateComponent },
             { path: 'employee/update/:id', component: EmployeeUpdateComponent },
             { path: 'bonus', component: BonusCalculatorComponent }

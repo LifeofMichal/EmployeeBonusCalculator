@@ -1,46 +1,46 @@
 {
-  "consultants": [
-    {
-      "id": 0,
-      "firstName": "Michal Maciej",
-      "lastName": "Dzienis",
-      "employmentStartDate": "2018-05-21",
-      "registeredHours": 160
-    },
-    {
-      "firstName": "Abbe",
-      "lastName": "Nilsson",
-      "employmentStartDate": "2020-03-04",
-      "registeredHours": 160,
-      "id": 2
-    },
-    {
-      "firstName": "Nils",
-      "lastName": "Olsson",
-      "employmentStartDate": "2019-11-11",
-      "registeredHours": 275,
-      "id": 3
-    },
-    {
-      "firstName": "Andreas",
-      "lastName": "Johannsen",
-      "employmentStartDate": "2019-09-23",
-      "registeredHours": 240,
-      "id": 4
-    },
-    {
-      "firstName": "Nils",
-      "lastName": "Abbesson",
-      "employmentStartDate": "2002-11-11",
-      "registeredHours": 350,
-      "id": 5
-    },
-    {
-      "firstName": "Nadia",
-      "lastName": "Darghouth",
-      "employmentStartDate": "2019-08-01",
-      "registeredHours": 160,
-      "id": 6
-    }
-  ]
+    "consultants": [
+        {
+            "id": 0,
+            "firstName": "Michal",
+            "lastName": "Dzienis",
+            "employmentStartDate": "2018-05-21",
+            "registeredHours": 160
+        },
+        {
+            "firstName": "Abbe",
+            "lastName": "Nilsson",
+            "employmentStartDate": "2020-03-04",
+            "registeredHours": 160,
+            "id": 2
+        },
+        {
+            "firstName": "Nils",
+            "lastName": "Olsson",
+            "employmentStartDate": "2019-11-11",
+            "registeredHours": 275,
+            "id": 3
+        },
+        {
+            "firstName": "Andreas",
+            "lastName": "Johannsen",
+            "employmentStartDate": "2019-09-23",
+            "registeredHours": 240,
+            "id": 4
+        },
+        {
+            "firstName": "Nils",
+            "lastName": "Abbesson",
+            "employmentStartDate": "2002-11-11",
+            "registeredHours": 350,
+            "id": 5
+        },
+        {
+            "firstName": "Jens",
+            "lastName": "Nilssonsson",
+            "employmentStartDate": "2017-07-10",
+            "registeredHours": 250,
+            "id": 7
+        }
+    ]
 }
