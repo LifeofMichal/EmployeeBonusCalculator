@@ -1,0 +1,33 @@
+<h1>Update Employee Data</h1>
+
+<form [formGroup]="updateEmployeeForm" (ngSubmit)="updateEmployee()" #formDir="ngForm" ngNativeValidate>
+    <table>
+
+        <tbody>
+            <tr>
+                <td><label>First Name</label></td>
+                <td><input type="text" formControlName="firstName" required /></td>
+
+            </tr>
+            <tr>
+                <td><label>Last Name</label></td>
+                <td><input type="text" formControlName="lastName" required /></td>
+            </tr>
+            <tr>
+                <td><label>Registered Hours</label></td>
+                <td><input type="number" formControlName="hours" min="60" max="480" required /></td>
+            </tr>
+            <tr>
+                <td><label>Employment Start Date</label></td>
+                <td><input type="date" formControlName="startDate" max="{{maxDate()}}" required /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Save Changes</button>
+                    <button (click)="cancel()">Back to List of Employes</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>

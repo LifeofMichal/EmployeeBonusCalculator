@@ -1,0 +1,32 @@
+<h1>Bonus Calculator</h1>
+
+<p *ngIf="!employeesWithBonus"><em>Laddar...</em></p>
+
+<table *ngIf="employeesWithBonus">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Hiring Date</th>
+            <th>Registered Hours</th>
+            <th>Years Hired</th>
+            <th>Layality factor</th>
+            <th>Debit Points</th>
+            <th>Bonus</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of employeesWithBonus">
+            <td>{{ e.id }}</td>
+            <td>{{ e.firstName }}</td>
+            <td>{{ e.lastName }}</td>
+            <td>{{ e.employmentStartDate }}</td>
+            <td>{{ e.registeredHours }}</td>
+            <td>{{ e.years > 0 ? e.years : '< 1' }}</td>
+            <td>{{ e.loyality }}</td>
+            <td>{{ e.debitPoints }}</td>
+            <td>{{ e.bonus }} kr</td>
+        </tr>
+    </tbody>
+</table>

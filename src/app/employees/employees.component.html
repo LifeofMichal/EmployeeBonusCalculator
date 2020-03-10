@@ -1,0 +1,31 @@
+<h1>Employees</h1>
+
+<p *ngIf="!employees"><em>Laddar...</em></p>
+
+<table *ngIf="employees">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Hiring Date</th>
+            <th>Hours</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of (employees | async)">
+            <td>{{ e.id }}</td>
+            <td>{{ e.firstName }}</td>
+            <td>{{ e.lastName }}</td>
+            <td>{{ e.employmentStartDate }}</td>
+            <td>{{ e.registeredHours }}</td>
+            <td>
+                <button (click)="edit(e)">Edit</button>
+            </td>
+            <td>
+                <button [routerLink]="" (click)="deleteEmployee(e.id, e.firstName)">Remove
+                    {{ e.firstName }} {{e.lastName.substring(0, 1)}}.</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
